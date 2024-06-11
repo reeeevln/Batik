@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>CSS website layout</title>
+<style>
+	body {
+		font-family: Arial;
+		padding: 10px;
+		background: #f1f1f1;
+	}
+	/*style the header */
+	.header {
+		padding:400px;
+		text-align: center;
+		background: white;
+		background-image: url("bckk.jpg");
+		background-repeat: no-reapet;
+		background-size: cover;
+
+	}
+	header h1 {
+		font-size: 50px;
+	}
+
+	* {
+		box sizing: border-box;
+	}
+	/*style the top navigation bar*/
+	.topnav{
+		overflow: hidden;
+		background-color: #333;
+	}
+
+/* style the topnav links */
+.topnav a {
+	float: left;
+	display:  block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+	/* change color on hover */
+	.topnav a:hover {
+		backgroud-color: #ddd;
+		color: darkorange;
+	}
+
+	/*create two unequal coloums that floats next to each other*/
+	.leftcolumn{
+		float: left;
+		width: 75%;
+
+	}
+	/*right column*/
+.rightcolumn{
+	float: left;
+	width: 25%;
+	background-color: #f1f1f1;
+	padding left: 20px; 
+}
+ /* fake image*/
+ .fakeimg{
+ 	background-color: #aaa;
+ 	width: 100%;
+ 	padding: 20Px;
+ }
+  /*add acard effect for articles*/
+  .card {
+  	background-color: white;
+  	padding: 20px;
+  	margin-top: 20px;
+  }
+  /*clear floats after the columns*/
+  .row:: after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
+
+  /*footer*/
+  .footer {
+  	padding: 20px;
+  	text-align: center;
+  	background: #ddd;
+  	margin-top: 20px;
+  }
+  /* responsive layout - when the screen is less than 800px wide, make the two columnstack on top each other instead of next to each other*/
+  @media screen and (max-width: 800px){
+  	.leftcolumn, .rightcolumn{
+  		width: 100%;
+  		padding: 0;
+  	}
+  	}
+  	/* responsive layout - when the screen is less than 400px wide, make the navigation stack on top off each other instead of next to each other*/
+  	@media screen and (max-width: 400px) {
+  		.topnav a {
+  			float: none;
+  			width: 100%;
+  		}
+  	}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1></h1>
+		<p></p>
+	</div>
+
+	<div class="topnav">
+     <a href ="pagewanita.html">WANITA</a>
+     <a href ="pagepria.html.">PRIA</a>
+     <a href ="pagepria.html.">ANAK-ANAK</a>
+	 <a href ="pagecouple.html">COUPLE</a>
+</div>
+
+ <div class="row">
+ 	<div class="leftcolumn">
+ 		<div class="card">
+ 			<h2>BAJU BATIK</h2>
+            <h5>Kain batik, Jun 2, 2024</h5>
+            <img src="batiik.jpeg"height="500px"width="100%">
+            <p>Baju Batik</p>
+            <p>Batik merupakan salah satu warisan budaya Indonesia yang wajib dilestarikan. Dulu pakaian bermotif Batik hanya dipakai untuk menghadiri acara-acara formal saja,menghadiri acara sacral dan acara penting seperti acara keluarga lainnya. tapi kini sudah banyak dipakai untuk berbagai suasana dengan menyesuaikan jenis kebutuhan yang di inginkan para pecinta batik. Seiring perkembangan zaman, khususnya di bidang mode, kini pakaian Batik juga sudah mengalami perkembangan dalam hal motif atau corak. Modelnya pun juga sudah disesuaikan dengan tren fashion masa kini. Batik cap, batik print, batik tulis dari merk yang sudah terkenal di Internasional bahkan lokal yang sangat terkenal di daerah asal batik.</p>
+        
+        <div class="card">
+         	<h2>PAKAIAN BATIK BERAGAM MODEL  </h2>
+        	<h5>Berbagai macam model batik, Jun 2, 2024</h5>
+        	<img src="batik11.jpg"height="500px"width="100%">
+            <p>Batik Trendi</p>
+            <p>Anda sedang mencari pakaian Batik model terbaru? BATIQUE menyediakan berbagai koleksi pakaian Batik model terbaru yang trendi dan eksklusif. Toko online kami juga memberikan diskon yang menarik untuk produk yang ditawarkan.  Belanja banyak bukan masalah karena semua barang yang Anda pilih akan segera antarkan ke rumah Anda. Di beberapa kesempatan bahkan Anda bisa mendapatkan potongan harga khusus. Jadi, Anda tinggal on dengan gadget Anda dan pilih mana item fashion yang Anda inginkan. Berbagai macam batik yang tersedia di toko kami dengan motif yang sangat elegan.</p>
+        </div>
+        <div class="card">
+         	<h2>PAKAIAN BATIK ANAK-ANAK </h2>
+        	<h5>Baju model anak, Jun 3, 2024</h5>
+        	<img src="batik13.jpg"height="500px"width="100%">
+            <p>Batik Anak</p>
+            <p>Semakin berkembangnya dunia fashion di Indonesia membuat batik kini tidak hanya menjadi busana yang terkesan kaku dan formal. Saat ini batik dapat dikenakan dalam berbagai kesempatan, bahkan untuk anak-anak sekalipun, model baju batik anak juga kian beragam, baik untuk anak perempuan maupun laki-laki. Baju batik anak perempuan bisa berupa dress, blouse, ataupun skirt. Kemeja batik anak laki-laki pun tidak kalau variatifnya. Meski pilihan batik anak yang tersedia kini sangat banyak, tapi sebagai orang tua tetap harus selektif dalam memilih. Berikut ini tips memilih baju batik anak dan cara memadupadankannya:</p>
+       </div>
+       <div class="card">
+         	<h2>PAKAIAN BATIK COUPLE PASANGAN </h2>
+        	<h5>Baju Model Couple, Jun 3, 2024</h5>
+        	<img src="batik16.webp"height="500px"width="100%">
+            <p>Batik Couple!</p>
+            <p>Semakin berkembangnya dunia fashion di Indonesia membuat batik kini tidak hanya menjadi busana yang terkesan kaku dan formal. Saat ini batik dapat dikenakan dalam berbagai kesempatan, bahkan untuk anak-anak sekalipun, model baju batik anak juga kian beragam, baik untuk anak perempuan maupun laki-laki. Baju batik anak perempuan bisa berupa dress, blouse, ataupun skirt. Kemeja batik anak laki-laki pun tidak kalau variatifnya. Meski pilihan batik anak yang tersedia kini sangat banyak, tapi sebagai orang tua tetap harus selektif dalam memilih. Berikut ini tips memilih baju batik anak dan cara memadupadankannya:</p>
+       </div>
+       <div class="card">
+         	<h2>PROMO SPESIAL MENUNGGU MU LOHH</h2>
+        	<h5>Promo Spesial, Jun 5, 2024</h5>
+        	<img src="batik12.webp"height="500px"width="100%">
+            <p>Ada diskon di setiap pembelian</p>
+            <p>Banyak diskon menarik loh buat kamu, di pembelian pertama kamu akan mendapatkan diskon spesial, Tak perlu lagi pusing-pusing belanja di tempat lain, belanja online saja di BATIQUE. Cara berbelanja sangat mudah dan proses pengiriman pun cepat sehingga akan cepat sampai di lokasi Anda berada. Ayo belanja Batik sekarang juga, jangan sampai kehabisan! Anda bisa puas belanja dengan mudah dan cepat.</p>
+       </div>
+   </div>
+</div>
+</div>
+       <div class="rightcolumn">
+       	<div class="card">
+       		<h2>About me</h2>
+       		<img src="logo1.jpg"height="400px"width="100%">
+       		<p></p>
+       	</div>
+       </div>
+   </div>
+       	<div class="rightcolumn">
+       	<div classs="card">
+       		<h3>Popular post</h3>
+       		<img src="model2.webp"height="500px"width="100%"></div>
+       		<img src="model3.webp"height="500px"width="100%"></div>
+       		<img src="batik14.jpg"height="500px"width="25%">
+       		<img src="model6.jpg"height="500px"width="25%">
+       		<img src="model5.webp"height="500px"width="25%">
+       		<img src="batik4.jpg"height="500px"width="25%">
+       	</div>
+       </div>
+       	<div class="card">
+       		<h3>Follow Me</h3>
+       		<p>Kamu bisa menghubungi saya melalui nomer WA:
+       			<a href="https://wa.me/qr/I4OGSUZPBZC2F1">+62139531</a>
+       		Atau juga alamat email: revalinalestari020@gmail.com</p>
+
+       	</div>
+       </div>
+   </div>
+   <div class="footer">
+ 	<h5>Copyright 2024 &copy; Revalina Lestari</h5>
+   </div>
+   
+</body>
+</html>
